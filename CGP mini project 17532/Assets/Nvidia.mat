@@ -23,14 +23,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Amplitude: 1
+    - _Amplitude: 1.23
     - _Glossiness: 0.5
     - _Metallic: 0
     - _Period: 1
     - _Shininess: 10
-    - _Speed: 1
-    - _Steepness: 1
-    - _WaveLenght: 1
+    - _Speed: -343.8
+    - _Steepness: 0
+    - _WaveLenght: 9.1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.022058845, g: 0.55486804, b: 1, a: 1}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}

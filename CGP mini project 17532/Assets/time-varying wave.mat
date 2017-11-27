@@ -19,11 +19,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _Amplitude: 0.79
-    - _Period: -1.22
-    - _RunTime: 31.794565
+    - _Amplitude: 20.54
+    - _Period: 0.1
+    - _RunTime: 127.71947
     - _Shininess: 10
-    - _WaveLenght: 3.98
+    - _WaveLenght: -0.16
     m_Colors:
     - _Color: {r: 0, g: 0.0068967342, b: 1, a: 1}
     - _SpecColor: {r: 0, g: 0, b: 1, a: 1}

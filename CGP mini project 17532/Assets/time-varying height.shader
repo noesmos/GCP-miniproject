@@ -45,10 +45,10 @@
 		//time-varying
 
 		float waterHeight = _Amplitude * cos((2 * 3.14f * _CosTime) / _Period);
-		float symmetricWave = _Amplitude * cos((dist * 2 * _CosTime) / _WaveLenght);
+		//float symmetricWave = _Amplitude * cos((dist * 2 * _CosTime) / _WaveLenght);
 		
-		v.vertex.y += waterHeight + symmetricWave;
-		v.normal.y += waterHeight + symmetricWave;
+		v.vertex.y += waterHeight;// +symmetricWave;
+		//v.normal.y += waterHeight + symmetricWave;
 
 
 		////attempt to change normal vectors

@@ -1,8 +1,8 @@
 ﻿Shader "Custom/Nvidia" {
 	Properties{
 		_Color("Color", Color) = (1,1,1,1)
-		_SpecColor("Specular Color", Color) = (1,1,1,1)
-		_Shininess("Shininess", Float) = 10
+		//_SpecColor("Specular Color", Color) = (1,1,1,1)
+		//_Shininess("Shininess", Float) = 10
 		_WaveLenght("Wave Lenght", float) = 1
 		_Speed("Speed", float) = 1
 		_Amplitude("amplitude", float) = 1
@@ -19,8 +19,8 @@
 #pragma fragment frag
 		//user defined
 		uniform float4 _Color;
-	uniform float4 _SpecColor;
-	uniform float _Shininess;
+	//uniform float4 _SpecColor;
+	//uniform float _Shininess;
 	uniform float _WaveLenght;
 	uniform float _Speed;
 	uniform float _Amplitude;
@@ -52,9 +52,7 @@
 
 		float2 direc = normalize(float2(posWorld.x,posWorld.z));
 
-		//direc = normalize(float2(1,1));
-
-		float dist = distance(posWorld, float4(0.0, 0.0, 0.0, 0.0));
+		//float dist = distance(posWorld, float4(0.0, 0.0, 0.0, 0.0));
 
 		float  w = 2.0 * 3.1415 / _WaveLenght;
 
@@ -69,8 +67,6 @@
 
 		//normal vector
 		float3 normalVector = float3(0, 0, 0);
-
-
 
 		normalVector.x = -direc.x * w *_Amplitude * cos(w * dot(direc, pos2d) + phase * _Time);
 		normalVector.y = 1 - _Steepness * w * _Amplitude * sin(w * dot(direc, pos2d) + phase * _Time);
@@ -114,8 +110,8 @@
 #pragma fragment frag
 		//user defined
 		uniform float4 _Color;
-	uniform float4 _SpecColor;
-	uniform float _Shininess;
+	//uniform float4 _SpecColor;
+	//uniform float _Shininess;
 	uniform float _WaveLenght;
 	uniform float _Speed;
 	uniform float _Amplitude;
@@ -147,9 +143,7 @@
 
 		float2 direc = normalize(float2(posWorld.x,posWorld.z));
 
-		//direc = normalize(float2(1,1));
-
-		float dist = distance(posWorld, float4(0.0, 0.0, 0.0, 0.0));
+		//float dist = distance(posWorld, float4(0.0, 0.0, 0.0, 0.0));
 
 		float  w = 2.0 * 3.1415 / _WaveLenght;
 
